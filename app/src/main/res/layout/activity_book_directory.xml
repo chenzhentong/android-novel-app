@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.BookDirectoryActivity">
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:fitsSystemWindows="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_gravity="center" >
+<!--        <TextView-->
+<!--            android:textSize="30dp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="≡"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:gravity="center"/>-->
+
+        <ImageView
+            android:id="@+id/book_directory_back"
+            android:layout_marginLeft="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/left2"/>
+        <TextView
+            android:id="@+id/directory_book_title"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1"
+            android:text="书名"
+            android:layout_gravity="center"
+            android:gravity="center"   android:textColor="@color/blackDark"/>
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text=">"-->
+<!--            android:textSize="30dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:gravity="center"/>-->
+
+        <ImageView
+            android:id="@+id/reverse_directory"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/reverseorder"/>
+    </LinearLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/book_chapter_recycle_view"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"/>
+</RelativeLayout>

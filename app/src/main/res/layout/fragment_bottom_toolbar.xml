@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragment.BottomToolbarFragment"
+    android:background="@color/white">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"    android:layout_weight="1" >
+        <!--书架-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" android:orientation="vertical"
+            android:layout_gravity="center">
+            <ImageView
+                android:id="@+id/bottom_toolbar_fragment_book_shelf_image_view"
+                android:layout_width="14dp"
+                android:layout_height="14dp" android:src="@drawable/bookshelf2"
+                android:layout_gravity="center" android:gravity="center"/>
+            <TextView
+                android:id="@+id/bottom_toolbar_fragment_book_shelf_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_red_dark"
+                android:text="书架" android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="14dp"/>
+        </LinearLayout>
+        <!--书城-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/bottom_toolbar_fragment_book_store_image_view"
+                android:layout_width="14dp"
+                android:layout_height="14dp" android:src="@drawable/bookstore"
+                android:layout_gravity="center" android:gravity="center"/>
+            <TextView
+
+                android:id="@+id/bottom_toolbar_fragment_book_store_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/darker_gray"
+                android:text="书城" android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="14dp"/>
+
+        </LinearLayout>
+        <!--我的-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <ImageView
+
+                android:id="@+id/bottom_toolbar_fragment_mine_image_view"
+                android:layout_width="14dp"
+                android:layout_height="14dp" android:src="@drawable/mine"
+                android:layout_gravity="center" android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/bottom_toolbar_fragment_mine_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/darker_gray"
+                android:text="我的" android:layout_gravity="center"
+                android:gravity="center" android:textSize="14dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

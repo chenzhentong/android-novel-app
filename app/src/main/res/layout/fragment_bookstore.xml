@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bookstore_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.BookstoreFragment" android:orientation="vertical" >
+    <fragment
+        android:id="@+id/book_store_titlebar_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.example.novelapplication.fragment.BookstoreTitlebarFragment"/>
+    <fragment
+
+        android:id="@+id/book_store_navbar_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.example.novelapplication.fragment.BookstoreNavbarFragment"/>
+
+
+</LinearLayout>

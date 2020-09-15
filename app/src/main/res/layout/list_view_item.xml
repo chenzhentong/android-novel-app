@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_view"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@color/cardview_light_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/novel_cover"
+            android:layout_width="100dp"
+            android:layout_height="220dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            android:background="@drawable/book1"/><!--   android:background="@drawable/nav_icon"        -->
+
+        <TextView
+            android:id="@+id/title_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小说名"
+            android:textSize="12sp"/>
+        <TextView
+            android:id="@+id/novel_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/title_note"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/novel_cover"
+            />
+
+        <TextView
+            android:id="@+id/author_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="作者"
+            android:textSize="12sp"
+            android:layout_below="@+id/novel_title" />
+
+        <TextView
+            android:id="@+id/novel_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/author_note"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/novel_cover"
+            />
+
+        <TextView
+            android:id="@+id/descr_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="简介"
+            android:textSize="12sp"
+            android:layout_below="@+id/novel_author" />
+
+        <TextView
+            android:id="@+id/novel_long_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/descr_note"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/novel_cover"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

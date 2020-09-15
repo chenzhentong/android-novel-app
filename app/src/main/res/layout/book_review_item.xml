@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/book_review_item"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal" >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_weight="1" android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/review_user_icon"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/user"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical"
+                android:layout_gravity="center">
+                <TextView
+                    android:id="@+id/review_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="732452****222"
+                    android:textSize="12dp"
+                    android:textColor="@color/color324B79"/>
+                <TextView
+                    android:id="@+id/review_publish_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2019-12-21 23:21"
+                    android:textSize="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/review_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="xxx" android:layout_marginLeft="5dp"
+            android:textSize="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/agree" />
+            <TextView
+                android:id="@+id/review_agree_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="agree 9" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/delete_book_review"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:text="删除"
+            android:visibility="invisible"
+            android:textSize="10dp"/>
+    </LinearLayout>
+</LinearLayout>

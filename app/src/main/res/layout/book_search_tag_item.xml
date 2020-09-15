@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/book_search_tag_item"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"   >
+
+   <TextView
+       android:id="@+id/history_tag"
+       android:layout_width="wrap_content"
+       android:layout_height="30dp"
+       android:background="@color/white"
+       android:layout_gravity="center"
+       android:gravity="center" android:textColor="@color/color7D7C7D"
+       android:paddingLeft="3dp" android:paddingRight="3dp" android:textSize="14dp"/>
+
+</LinearLayout>

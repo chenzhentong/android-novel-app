@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragment.BookstoreNavbarFragment"
+    android:orientation="vertical">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" >
+       <TextView
+           android:id="@+id/well_choose"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:layout_width="wrap_content"
+           android:layout_weight="1"
+           android:layout_height="50dp" android:text="精选"
+           android:textSize="15dp"/>
+       <TextView
+           android:id="@+id/sort"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:layout_width="wrap_content"
+           android:layout_weight="1"
+           android:layout_height="50dp" android:text="分类"
+           android:textSize="15dp"/>
+       <TextView
+           android:id="@+id/ranklist"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:layout_width="wrap_content"
+           android:layout_weight="1"
+           android:layout_height="50dp" android:text="榜单"
+           android:textSize="15dp"/>
+       <TextView
+           android:id="@+id/booklist"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:layout_width="wrap_content"
+           android:layout_weight="1"
+           android:layout_height="50dp" android:text="书单"
+           android:textSize="15dp"/>
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/well_choose_line"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            />
+        <TextView
+            android:id="@+id/sort_line"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            />
+        <TextView
+            android:id="@+id/ranklist_line"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+       />
+        <TextView
+            android:id="@+id/booklist_line"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+             />
+    </LinearLayout>
+</LinearLayout>

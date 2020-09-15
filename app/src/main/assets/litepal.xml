@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<litepal>
+    <dbname value="Book" />
+    <version  value="1"/>
+    <list>
+        <mapping class="com.example.novelapplication.model.BookShelfItem"/>
+        <mapping class="com.example.novelapplication.model.BookViewRecord"/>
+        <mapping class="com.example.novelapplication.model.BookSearchTag"/>
+    </list>
+
+</litepal>
+<!--
+    <dbname value="BookViewRecord" />
+<mapping class="com.example.novelappl
+    ication.model.BookViewRecord"/>-->

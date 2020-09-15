@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.BookSearchActivity" >
+
+    <!--        android:id="@+id/search_header_layout"-->
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@android:color/holo_red_dark"
+        android:orientation="horizontal"     android:fitsSystemWindows="true" >
+        <ImageView
+            android:id="@+id/back_search_last"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/left"
+            android:layout_marginLeft="10dp"/>
+        <EditText
+            android:id="@+id/search_content_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="30dp"
+
+            android:layout_weight="1"
+            android:hint="搜索书名或作者"
+            android:background="@drawable/round2"
+            android:textColor="@color/color666"
+            android:textColorHint="@color/color666"
+            android:textSize="14dp"
+            />
+        <TextView
+            android:id="@+id/search_book_text_view"
+            android:layout_marginRight="15dp"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

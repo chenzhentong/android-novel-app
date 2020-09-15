@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/hot_button"
+            android:title="人气榜" />
+        <item
+            android:id="@+id/new_button"
+            android:title="新品榜" />
+        <item
+            android:id="@+id/rank_button"
+            android:title="评分榜" />
+        <item
+            android:id="@+id/over_button"
+            android:title="完结榜" />
+<!--        <item-->
+<!--            android:id="@+id/girl_button"-->
+<!--            android:title="女生最爱" />-->
+
+
+
+    </group>
+</menu>

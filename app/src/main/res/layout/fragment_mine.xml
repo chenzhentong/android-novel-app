@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mine_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.MineFragment" >
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_marginBottom="20dp"
+            android:fitsSystemWindows="true">
+
+            <ImageView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/my_photo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/user" android:layout_gravity="center"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:id="@+id/my_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/blackDark"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+
+        <ListView
+            android:id="@+id/my_setting_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+
+</FrameLayout>
